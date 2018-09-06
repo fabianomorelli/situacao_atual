@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html> 
-  <head> 
+  <head>
+    <meta charset="UTF-8">
    <title>Situação atual - Experimental</title> 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="externals/bootstrap/css/bootstrap.min.css">
@@ -47,6 +49,8 @@
           <div class="row content-center" style="margin-top:30px">
             <img id="mainImageTemperatura" src="">
           </div>
+        </br>
+        <hr>
           <br>
 
           <!-- Template to create a table 
@@ -65,11 +69,27 @@
           <!-- Template to create a chart
             <canvas id="chartId" width="400" height="300"></canvas>
           -->
+          <h1>Análise da Quantidade de Focos por Países</h1>
           <div class="row">
             <div class="col-12">
-              <h3>Contagem por países</h3>
+              <h3>Dados 24H  - Dia anterior a partir das 00hs.</h3>
+
               <p>Número de focos acumulados por Países</p>
             </div>
+
+<!-- inserir mapa de focos pais 24h -->
+          <h2>Mapa de Visão Geral dos Focos.</h2>
+          <div class="row content-center" style="margin-top:30px">
+            <img id="mainImagePaises1d" src="">
+          </div>
+          <br>
+          <p><b>Figura 1: </b>
+          Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.
+          </p>
+          <hr>
+
+
+
             <div class="offset-2 col-8 table-situacao">
               <h5>Contagem de focos acumulados em 24h</h5>
               <table id="tablePaises1d" class="table table-sm table-striped">
@@ -84,6 +104,7 @@
                 </tbody>
               </table>
             </div>
+
             <div class="offset-2 col-8 chart-situacao">
               <canvas id="chartPaises1d" width="400" height="300"></canvas>
             </div>
