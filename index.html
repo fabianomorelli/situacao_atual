@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Situação atual - Experimental</title> 
+  <title>Situação atual - Experimental</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="externals/bootstrap/css/bootstrap.min.css">
-</head> 
+</head>
 
-<body> 
+<body>
   <!-- Bootstrap -->
   <script src="externals/jquery/jquery-3.2.1.min.js"></script>
   <script src="externals/bootstrap/js/bootstrap.min.js"></script>
@@ -29,8 +29,8 @@
         <p>
           Esta homepage é um exemplo/modelo que fornece as Instituições que utilizam o TerraMA2Q uma ferramenta de acompanhamento da dinâmica das queimadas
           localmente, porém da mesma maneira que pode ser encontrada no portal do <a href="http://www.inpe.br/queimadas">Programa Queimadas do INPE</a>.<br/>
-          O objetivo é demonstrar como personalizar os principais resultados das Análises desenvolvidas utilizando a Plataforma TerraMA2, onde todos 
-          os dados apresentados são atualizados dinâmicamente depois dos processos de Coleta, Análise e Publicação e assim conhecer uma possibilidade de 
+          O objetivo é demonstrar como personalizar os principais resultados das Análises desenvolvidas utilizando a Plataforma TerraMA2, onde todos
+          os dados apresentados são atualizados dinâmicamente depois dos processos de Coleta, Análise e Publicação e assim conhecer uma possibilidade de
           rápido desenvolvimento e customização.
         </p>
         <hr>
@@ -56,9 +56,8 @@
 
 
 
-      <!-- inicio da secao -->
+      <!-- Paises - 24 -->
       <div class="row">
-
         <div class="col-12">
           <h1>Análise da Quantidade de Focos por Países</h1>
           <h3>Dados 24H  - Dia anterior a partir das 00hs.</h3>
@@ -68,7 +67,7 @@
           <!-- inserir mapa de focos pais 24h -->
           <h4>Mapa de Visão Geral dos Focos.</h4>
           <div class="row content-center" style="margin-top:30px; border:1px solid;">
-            <img id="mainImagePaises1d" src="" style="position: relative;"> 
+            <img id="mainImagePaises1d" src="" style="position: relative;">
             <div style="position: absolute;">
               Legenda: <br >
               <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_14/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_14:view14" style="WIDTH:180px" >
@@ -98,45 +97,68 @@
             <canvas id="chartPaises1d" width="400" height="300"></canvas>
           </div>
         </div>
+      </div>
+
+      <!-- Paises - Mensal -->
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3>Dados Mensal  - Considera todas as ocorrências no mês atual.</h3>
+          <p>Número de focos acumulados por Países</p>
 
 
-
-
-
-
-
-
-
-
-
-        <!--<div class="offset-2 col-8 table-situacao">-->
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImagePaisesMes" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_14/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_14:view14" style="WIDTH:180px" >
+            </div>
+          </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
           <hr>
-          <div class="row">
-            <div class="col-12">
-              <h3>Dados Mensal  - Considera todas as ocorrências no mês atual.</h3>
-              <p>Contagem de focos acumulados em um mê</p>
+
+          <div class="offset-2 col-8 table-situacao">
+              <h5>Contagem de focos acumulados em um mês</h5>
+              <table id="tablePaisesMes" class="table table-sm  table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Paises</th>
+                    <th>Focos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
             </div>
 
 
+            <div class="offset-2 col-8 chart-situacao">
+              <canvas id="chartPaisesMes" width="400" height="300"></canvas>
+            </div>
+        </div>
+      </div>
 
-            <table id="tablePaisesMes" class="table table-sm  table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Paises</th>
-                  <th>Focos</th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
+      <!-- Paises - Anual -->
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3>Dados Anual  - Considera todas as ocorrências no ano atual.</h3>
+          <p>Número de focos acumulados por Países</p>
+
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImagePaisesAno" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_14/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_14:view14" style="WIDTH:180px" >
+            </div>
           </div>
-          <div class="offset-2 col-8 chart-situacao">
-            <canvas id="chartPaisesMes" width="400" height="300"></canvas>
-          </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
+          <hr>
 
           <div class="offset-2 col-8 table-situacao">
-            <hr>
             <h5>Contagem de focos acumulados em um ano</h5>
             <table id="tablePaisesAno" class="table table-sm table-striped">
               <thead>
@@ -150,14 +172,35 @@
               </tbody>
             </table>
           </div>
+
           <div class="offset-2 col-8 chart-situacao">
             <canvas id="chartPaisesAno" width="400" height="300"></canvas>
           </div>
+        </div>
+      </div>
 
-          <div class="col-12">
-            <h3>Contagem por estados</h3>
-            <p>Número de focos acumulados por Estados</p>
+
+
+
+
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h1>Análise da Quantidade de Focos por Estados</h1>
+          <h3>Dados 24H  - Dia anterior a partir das 00hs.</h3>
+          <p>Número de focos acumulados por Estados</p>
+
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImageEstados1d" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_14/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_14:view14" style="WIDTH:180px" >
+            </div>
           </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
+
+          <hr>
           <div class="offset-2 col-8 table-situacao">
             <h5>Contagem de focos acumulados em 24h</h5>
             <table id="tableEstados1d" class="table table-sm table-striped">
@@ -172,9 +215,31 @@
               </tbody>
             </table>
           </div>
+
           <div class="offset-2 col-8 chart-situacao">
             <canvas id="chartEstados1d" width="400" height="300"></canvas>
           </div>
+        </div>
+      </div>
+
+
+
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3>Dados Mensal  - Considera todas as ocorrências no mês atual.</h3>
+          <p>Número de focos acumulados por Estados</p>
+
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImageEstadosMes" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_20/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_20:view20" style="WIDTH:180px" >
+            </div>
+          </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
+
 
           <div class="offset-2 col-8 table-situacao">
             <hr>
@@ -194,9 +259,27 @@
           <div class="offset-2 col-8 chart-situacao">
             <canvas id="chartEstadosMes" width="400" height="300"></canvas>
           </div>
+        </div>
+      </div>
 
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3>Dados Anual  - Considera todas as ocorrências no ano atual.</h3>
+          <p>Número de focos acumulados por Estados</p>
+
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImageEstadosAno" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_21/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_21:view21" style="WIDTH:180px" >
+            </div>
+          </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
+
+          <hr>
           <div class="offset-2 col-8 table-situacao">
-            <hr>
             <h5>Contagem de focos acumulados em um ano</h5>
             <table id="tableEstadosAno" class="table table-sm table-striped">
               <thead>
@@ -210,15 +293,30 @@
               </tbody>
             </table>
           </div>
+
           <div class="offset-2 col-8 chart-situacao">
             <canvas id="chartEstadosAno" width="400" height="300"></canvas>
           </div>
-          <!--</div>-->
+        </div>
+      </div>
 
-          <div class="col-12">
-            <h3>Contagem por biomas</h3>
-            <p>Número de focos acumulados por Biomas</p>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3>Dados 24H  - Contagem por biomas</h3>
+          <p>Número de focos acumulados por Biomas</p>
+
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImageBiomas1d" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_22/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_22:view22" style="WIDTH:180px" >
+            </div>
           </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
+
+
           <div class="offset-2 col-8 table-situacao">
             <h5>Contagem de focos acumulados em 24h</h5>
             <table id="tableBiomas1d" class="table table-sm table-striped">
@@ -236,9 +334,27 @@
           <div class="offset-2 col-8 chart-situacao">
             <canvas id="chartBiomas1d" width="400" height="300"></canvas>
           </div>
+        </div>
+      </div>
 
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3>Dados Mês  - Contagem por biomas</h3>
+          <p>Número de focos acumulados por Biomas</p>
+
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImageBiomasMes" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_24/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_24:view24" style="WIDTH:180px" >
+            </div>
+          </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
+
+          <hr>
           <div class="offset-2 col-8 table-situacao">
-            <hr>
             <h5>Contagem de focos acumulados em um mês</h5>
             <table id="tableBiomasMes" class="table table-sm  table-striped">
               <thead>
@@ -255,9 +371,27 @@
           <div class="offset-2 col-8 chart-situacao">
             <canvas id="chartBiomasMes" width="400" height="300"></canvas>
           </div>
+        </div>
+      </div>
 
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3>Dados Ano  - Contagem por biomas</h3>
+          <p>Número de focos acumulados por Biomas</p>
+
+          <h4>Mapa de Visão Geral dos Focos.</h4>
+          <div class="row content-center" style="margin-top:30px; border:1px solid;">
+            <img id="mainImageBiomasAno" src="" style="position: relative;">
+            <div style="position: absolute;">
+              Legenda: <br >
+              <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_25/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_25:view25" style="WIDTH:180px" >
+            </div>
+          </div>
+          <p><b>Figura 1: </b>Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.</p>
+
+          <hr>
           <div class="offset-2 col-8 table-situacao">
-            <hr>
             <h5>Contagem de focos acumulados em um ano</h5>
             <table id="tableBiomasAno" class="table table-sm table-striped">
               <thead>
@@ -271,30 +405,11 @@
               </tbody>
             </table>
           </div>
+
           <div class="offset-2 col-8 chart-situacao">
             <canvas id="chartBiomasAno" width="400" height="300"></canvas>
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
-
-  <!-- inserir mapa de focos pais 24h -->
-  <h2>Mapa de Visão Geral dos Focos.</h2>
-  <div class="row content-center" style="margin-top:30px; border:1px solid;">
-    <img id="mainImagePaisesMes" src=""> 
-    <div>
-
-      Legenda: <br >
-      <img src="http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_14/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=120&HEIGHT=40&layer=terrama2_14:view14" style="WIDTH:180px" >
-    </div>
-  </div>
-  <br>
-  <p><b>Figura 1: </b>
-    Distribuição espacial dos focos identificados por diferêntes satélites, representados por cores distintas.
-  </p>
-  <hr>
-  <!--final da figura-->
-</body> 
+</body>
 </html>

@@ -90,7 +90,7 @@
   }
 
   /**
-   * 
+   *
    * @param {JSON} data - Data to create chart and table
    * @param {String} tableId - Html element id of table
    * @param {String} chartId - Html element id of chart
@@ -141,15 +141,50 @@
     //"http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=application/json&typeNames=terrama2_11:view11&propertyName=nfocos24h,monitored_nome&sortBy=nfocos24h+D";
     //Paises
     var mapImagePaises1d = document.getElementById("mainImagePaises1d");
-    //var imageHrefPaises1d = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_8:view8&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
     var imageHrefPaises1d = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_14/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_14:view14&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
     console.log(imageHrefPaises1d);
-    mainImagePaises1d.setAttribute("src", imageHrefPaises1d);
+    mapImagePaises1d.setAttribute("src", imageHrefPaises1d);
 
     var mapImagePaisesMes = document.getElementById("mainImagePaisesMes");
     var imageHrefPaisesMes = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_17/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_17:view17&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
     console.log(imageHrefPaisesMes);
-    mainImagePaisesMes.setAttribute("src", imageHrefPaisesMes);
+    mapImagePaisesMes.setAttribute("src", imageHrefPaisesMes);
+
+    var mapImagePaisesAno  = document.getElementById("mainImagePaisesAno");
+    var imageHrefPaisesAno = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_13/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_13:view13&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefPaisesAno);
+    mapImagePaisesAno.setAttribute("src", imageHrefPaisesAno);
+
+    var mapImageEstados1d  = document.getElementById("mainImageEstados1d");
+    var imageHrefEstados1d = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_18/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_18:view18&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefEstados1d);
+    mapImageEstados1d.setAttribute("src", imageHrefEstados1d);
+
+    var mapImageEstadosMes = document.getElementById("mainImageEstadosMes");
+    var imageHrefEstadosMes = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_20/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_20:view20&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefEstadosMes);
+    mapImageEstadosMes.setAttribute("src", imageHrefEstadosMes);
+
+    var mapImageEstadosAno = document.getElementById("mainImageEstadosAno");
+    var imageHrefEstadosAno = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_21/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_21:view21&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefEstadosAno);
+    mapImageEstadosAno.setAttribute("src", imageHrefEstadosAno);
+
+    var mapImageBiomas1d = document.getElementById("mainImageBiomas1d");
+    var imageHrefBiomas1d = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_22/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_22:view22&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefBiomas1d);
+    mapImageBiomas1d.setAttribute("src", imageHrefBiomas1d);
+
+    var mapImageBiomasMes = document.getElementById("mainImageBiomasMes");
+    var imageHrefBiomasMes = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_24/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_24:view24&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefBiomasMes);
+    mapImageBiomasMes.setAttribute("src", imageHrefBiomasMes);
+
+
+    var mapImageBiomasAno = document.getElementById("mainImageBiomasAno");
+    var imageHrefBiomasAno = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_25/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_25:view25&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefBiomasAno);
+    mapImageBiomasAno.setAttribute("src", imageHrefBiomasAno);
 
 
     var fieldsPaises1d = ["monitored_name_0", "nfocos24h"];
@@ -161,6 +196,8 @@
     });
 
     var fieldsPaisesMes = ["monitored_name_0", "nfocosmes"];
+    var final_url = '&propertyName=nfocosmes,monitored_name_0&sortBy=execution_date+D,nfocosmes+D&count=13'
+    http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_17/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_17:view17&maxFeatures=13&outputFormat=application%2Fjson
     var urlPaisesMes = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_17/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_17:view17&maxFeatures=13&outputFormat=application%2Fjson&propertyName=nfocosmes,monitored_name_0&sortBy=execution_date+D,nfocosmes+D&count=13";
     $.get(urlPaisesMes, function(data, status){
       if (status == "success")
@@ -175,44 +212,44 @@
     });
 
     //Estados
-    var fieldsEstados1d = ["monitored_nome", "nfocos24h"];
-    var urlEstados1d = "http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=application/json&typeNames=terrama2_15:view15&propertyName=nfocos24h,monitored_nome&sortBy=execution_date+D,nfocos24h+D&count=20";
+    var fieldsEstados1d = ["monitored_name_1", "nfocos24h"];
+    var urlEstados1d = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_18/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_18:view18&maxFeatures=10&outputFormat=application%2Fjson&propertyName=nfocos24h,monitored_name_1&sortBy=execution_date+D,nfocos24h+D&count=10";
     $.get(urlEstados1d, function(data, status){
       if (status == "success")
         createDataObjects(data, "tableEstados1d", "chartEstados1d", "bar", fieldsEstados1d);
     });
 
-    var fieldsEstadosMes = ["monitored_nome", "nfocosmes"];
-    var urlEstadosMes = "http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=application/json&typeNames=terrama2_16:view16&propertyName=nfocosmes,monitored_nome&sortBy=execution_date+D,nfocosmes+D&count=20";
+    var fieldsEstadosMes = ["monitored_name_1", "nfocosmes"];
+    var urlEstadosMes = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_20/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_20:view20&maxFeatures=10&outputFormat=application%2Fjson&propertyName=nfocosmes,monitored_name_1&sortBy=execution_date+D,nfocosmes+D&count=10";
     $.get(urlEstadosMes, function(data, status){
       if (status == "success")
         createDataObjects(data, "tableEstadosMes", "chartEstadosMes", "horizontalBar", fieldsEstadosMes);
     });
 
-    var fieldsEstadosAno = ["monitored_nome", "nfocosano"];
-    var urlEstadosAno = "http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=application/json&typeNames=terrama2_17:view17&propertyName=nfocosano,monitored_nome&sortBy=execution_date+D,nfocosano+D&count=20";
+    var fieldsEstadosAno = ["monitored_name_1", "nfocosano"];
+    var urlEstadosAno = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_21/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_21:view21&maxFeatures=10&outputFormat=application%2Fjson&propertyName=nfocosano,monitored_name_1&sortBy=execution_date+D,nfocosano+D&count=10";
     $.get(urlEstadosAno, function(data, status){
       if (status == "success")
         createDataObjects(data, "tableEstadosAno", "chartEstadosAno", "horizontalBar", fieldsEstadosAno);
     });
 
     //Biomas
-    var fieldsBiomas1d = ["monitored_nome", "nfocos24h"];
-    var urlBiomas1d = "http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=application/json&typeNames=terrama2_5:view_biomas_24&propertyName=nfocos24h,monitored_nome&sortBy=execution_date+D,nfocos24h+D&count=6";
+    var fieldsBiomas1d = ["monitored_name", "nfocos24h"];
+    var urlBiomas1d = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_22/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_22:view22&maxFeatures=6&outputFormat=application%2Fjson&propertyName=nfocos24h,monitored_name&sortBy=execution_date+D,nfocos24h+D&count=6";
     $.get(urlBiomas1d, function(data, status){
       if (status == "success")
         createDataObjects(data, "tableBiomas1d", "chartBiomas1d", "bar", fieldsBiomas1d);
     });
 
-    var fieldsBiomasMes = ["monitored_nome", "nfocosmes"];
-    var urlBiomasMes = "http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=application/json&typeNames=terrama2_5:view_biomas_mes&propertyName=nfocosmes,monitored_nome&sortBy=execution_date+D,nfocosmes+D&count=6";
+    var fieldsBiomasMes = ["monitored_name", "nfocosmes"];
+    var urlBiomasMes = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_24/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_24:view24&maxFeatures=6&outputFormat=application%2Fjson&propertyName=nfocosmes,monitored_name&sortBy=execution_date+D,nfocosmes+D&count=6";
     $.get(urlBiomasMes, function(data, status){
       if (status == "success")
         createDataObjects(data, "tableBiomasMes", "chartBiomasMes", "horizontalBar", fieldsBiomasMes);
     });
 
-    var fieldsBiomasAno = ["monitored_nome", "nfocosano"];
-    var urlBiomasAno = "http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=application/json&typeNames=terrama2_5:view_biomas_ano&propertyName=nfocosano,monitored_nome&sortBy=execution_date+D,nfocosano+D&count=6";
+    var fieldsBiomasAno = ["monitored_name", "nfocosano"];
+    var urlBiomasAno = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_25/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=terrama2_25:view25&maxFeatures=6&outputFormat=application%2Fjson&propertyName=nfocosano,monitored_name&sortBy=execution_date+D,nfocosano+D&count=6";
     $.get(urlBiomasAno, function(data, status){
       if (status == "success")
         createDataObjects(data, "tableBiomasAno", "chartBiomasAno", "horizontalBar", fieldsBiomasAno);
