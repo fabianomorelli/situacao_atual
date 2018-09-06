@@ -146,6 +146,10 @@
     console.log(imageHrefPaises1d);
     mainImagePaises1d.setAttribute("src", imageHrefPaises1d);
 
+    var mapImagePaisesMes = document.getElementById("mainImagePaisesMes");
+    var imageHrefPaisesMes = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/terrama2_17/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_17:view17&styles=&bbox=-109.45,-55.985,-28.8349999999999,13.3950000000001&width=768&height=660&srs=EPSG:4326&format=image%2Fpng";
+    console.log(imageHrefPaisesMes);
+    mainImagePaisesMes.setAttribute("src", imageHrefPaisesMes);
 
 
     var fieldsPaises1d = ["monitored_name_0", "nfocos24h"];
