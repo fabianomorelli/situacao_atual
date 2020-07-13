@@ -130,7 +130,7 @@
 
 
     var mapImageTemp = document.getElementById("mainImageTemperatura");
-    var imageHrefTemp = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_8:view8&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
+    var imageHrefTemp = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_45:view45&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
 //    var imageHrefTemp = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_8:view8&time=" + timeInfo $
     console.log(imageHrefTemp);
     mapImageTemp.setAttribute("src", imageHrefTemp);
