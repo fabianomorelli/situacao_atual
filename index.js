@@ -124,13 +124,13 @@
 
     var mapImage = document.getElementById("mainImage");
     var timeInfo = getTimeInfoSinceYesterday();
-    var imageHref = "http://www.terrama2.dpi.inpe.br/terrama2q/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=bluemarble:marble_pyramid,terrama2_6:view6&time=" + timeInfo + "&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
+    var imageHref = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_4:view4,terrama2_6:view6&time=" + timeInfo + "&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
     //var imageHref = "http://localhost:8080/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_9:marble_pyramid,terrama2q:focos&time=2017-12-05T00:59:11.000Z/2017-12-05T08:59:11.000Z&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
     mapImage.setAttribute("src", imageHref);
 
 
     var mapImageTemp = document.getElementById("mainImageTemperatura");
-    var imageHrefTemp = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_45:view45&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
+    var imageHrefTemp = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_45:view45,terrama2_4:view4&styles=&bbox=-86,-56,-29,12&width=600&height=720&srs=EPSG:4326&format=image%2Fpng";
 //    var imageHrefTemp = "http://www.terrama2.dpi.inpe.br/experimental/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=terrama2_8:view8&time=" + timeInfo $
     console.log(imageHrefTemp);
     mapImageTemp.setAttribute("src", imageHrefTemp);
